@@ -2,23 +2,32 @@ package skypro.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ControllerNew {
 
     @GetMapping("/")
     public String showPublicInfo() {
-        return "publicInfo";
+        return "mainInfo";
     }
 
-    @GetMapping("/tester_info")
-    public String showTesterInfo() {
-        return "testerInfo";
+    @GetMapping("/employee_info")
+    public String showEmployeeInfo() {
+        return "employeeInfo";
     }
 
-    @GetMapping("/admin_info")
-    public String showAdminInfo() {
-        return "adminInfo";
+    @GetMapping("/stuff_info")
+    public String showStuffInfo() {
+        return "stuffInfo";
+    }
+
+    @GetMapping("/it_info")
+    public String showITInfo() {
+        return "itInfo";
+    }
+
+    @GetMapping("/director_info")
+    public String showDirectorInfo() {
+        return "directorInfo";
     }
 }
